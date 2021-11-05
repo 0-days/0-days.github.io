@@ -1,2 +1,2 @@
 # 0-days.github.io
-Self Taught Programmers.
+Divided by seas and borders, United by the Internet.
