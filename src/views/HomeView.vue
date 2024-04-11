@@ -1,8 +1,8 @@
 <script setup>
-import Footer from '../components/Footer.vue'
-import Nav from '../components/Nav.vue'
-import TimelineItem from '../components/TimelineItem.vue'
-import Header from '../components/Header.vue'
+import Footer from '../components/FooterComponent.vue'
+import Nav from '../components/NavComponent.vue'
+import TimelineItem from '../components/TimelineItemComponent.vue'
+import Header from '../components/HeaderComponent.vue'
 
 </script>
 

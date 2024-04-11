@@ -1,5 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '../views/HomeView.vue'
+import About from '../views/AboutView.vue'
+import Contact from '../views/ContactView.vue'
+import Events from '../views/EventsView.vue'
+import Projects from '../views/ProjectsView.vue'
+import Privacypolicy from '../views/legal/PrivacyPolicyView.vue'
+import TermsAndConditions from '../views/legal/TermsAndConditionsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,32 +22,32 @@ const router = createRouter({
     {
       path: '/about',
       name: 'About - Hall of Codes',
-      component: () => import('../views/About.vue')
+      component: About
     },
     {
       path: '/contact',
       name: 'Contact - Hall of Codes',
-      component: () => import('../views/Contact.vue')
+      component: Contact
     },
     {
       path: '/events',
       name: 'Events - Hall of Codes',
-      component: () => import('../views/Events.vue')
+      component: Events
     },
     {
       path: '/projects',
       name: 'Projects - Hall of Codes',
-      component: () => import('../views/Projects.vue')
+      component: Projects
     },
     {
       path: '/privacypolicy',
       name: 'Privacy Policy - Hall of Codes',
-      component: () => import('../views/legal/PrivacyPolicy.vue')
+      component: Privacypolicy
     },
     {
       path: '/termsandconditions',
       name: 'Terms and Conditions - Hall of Codes',
-      component: () => import('../views/legal/TermsAndConditions.vue')
+      component: TermsAndConditions
     }
   ]
 })
