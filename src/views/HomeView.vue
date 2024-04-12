@@ -49,11 +49,10 @@ import Header from '../components/HeaderComponent.vue'
                 </div>
             </div>
 
-            <div class="">
+            <div class="mt-10">
                 <h2
                     class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white">
-                    <span
-                        class="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600">History</span>
+                    Timeline
                 </h2>
 
                 <ol class="relative border-s border-gray-200 dark:border-gray-700">

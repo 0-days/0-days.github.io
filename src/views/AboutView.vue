@@ -1,6 +1,7 @@
 <script setup>
 import Footer from '../components/FooterComponent.vue'
 import Nav from '../components/NavComponent.vue'
+import Profile from '../components/ProfileComponent.vue'
 </script>
 
 <template>
@@ -14,6 +15,21 @@ import Nav from '../components/NavComponent.vue'
             <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at Hall of Codes we share our
                 passion for coding and fostering collaboration among developers worldwide. Discover our journey, mission,
                 and commitment to advancing coding knowledge and skills in an inclusive and supportive environment.</p>
+
+            <div class="mt-10 grid md:grid-cols-3 gap-8">
+
+                <Profile :profilePhoto="mrepol742">
+                    <template #position>Founder</template>
+                    <template #name>Melvin Jones Gallano Repol</template>
+                    <template #bio>Freelance Software & Web Developer</template>
+                </Profile>
+
+                <Profile :profilePhoto="samiunnafis">
+                    <template #position>Co-Founder</template>
+                    <template #name>Samiun Nafis</template>
+                    <template #bio>Sussy baka. UwU</template>
+                </Profile>
+            </div>
 
             <div role="status"
                 class="mt-10 space-y-8 animate-pulse md:space-y-0 md:space-x-8 rtl:space-x-reverse md:flex md:items-center">
@@ -39,3 +55,16 @@ import Nav from '../components/NavComponent.vue'
     </main>
     <Footer />
 </template>
+<script>
+export default {
+  components: {
+    Profile
+  },
+  data() {
+    return {
+      mrepol742: 'https://avatars.githubusercontent.com/u/62317165?v=4',
+      samiunnafis: 'https://avatars.githubusercontent.com/u/56390452?v=4'
+    };
+  }
+};
+</script>
