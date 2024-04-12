@@ -1,7 +1,7 @@
 <template>
     <nav class="bg-white dark:bg-gray-900 max-w-full z-20 top-0 start-0">
         <div class="flex flex-wrap items-center justify-between mx-auto pt-5 pb-5 pl-4 pr-4">
-            <a href="https://hallofcodes.github.io/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://avatars.githubusercontent.com/u/93744673?s=200&v=4" class="rounded-full h-7"
                     alt="Hall of Codes Logo">
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">hallofcodes</span>
@@ -37,25 +37,21 @@
                 class="items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                 <ul
                     class="flex flex-col w-full p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-900 md:bg-gray-900 dark:border-gray-700">
+                    
                     <li>
-                        <a href="/"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-900 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                        <router-link to="/" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-900 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</router-link>
                     </li>
                     <li>
-                        <a href="/about"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-900 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                        <router-link to="/about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-900 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</router-link>
                     </li>
                     <li>
-                        <a href="/events"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-900 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Events</a>
+                        <router-link to="/events" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-900 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Events</router-link>
                     </li>
                     <li>
-                        <a href="/projects"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-900 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
+                        <router-link to="/projects" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-900 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</router-link>
                     </li>
                     <li>
-                        <a href="/contact"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-900 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                        <router-link to="/contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-900 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</router-link>
                     </li>
                 </ul>
             </div>

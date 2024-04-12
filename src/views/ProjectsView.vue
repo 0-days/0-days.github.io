@@ -39,7 +39,6 @@ import Project from '../components/ProjectComponent.vue'
                     </ul>
 
                 </div>
-
                 
                 <!-- Project 1 -->
                 <Project :source="source_orion" :website="website_orion" :projectPhoto="photo_orion">
